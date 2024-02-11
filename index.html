@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #3498db;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #fff;
+      border-bottom: 2px solid #3498db;
+      overflow: hidden;
+      margin-right: 20px; 
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: #3498db;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid #3498db;
+    }
+
+    .hero-section {
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 250px 20px;
+      margin-bottom: 20px;
+      }
+    
+
+    .hero-content {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .down-arrow-btn {
+      display: inline-block;
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 50%;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+
+    .about-section {
+      padding: 40px;
+      text-align: left;
+    }
+
+    .about-section h2{
+      padding: 40px;
+      text-align: center;
+    }
+
+    .about-section img{
+      padding: 40px;
+      text-align: center;
+    }
+
+    .portfolio-section {
+      padding: 40px;
+    }
+
+    .contact-section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .contact-form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .team-section {
+      text-align: center;
+      background-color: #fff;
+      padding: 150px 20px;
+      margin-bottom: 200 px;
+    }
+
+    .team-member {
+      display: inline-block;
+      margin: 20px;
+    }
+
+    .team-member img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .team-member h3 {
+      margin-bottom: 5px;
+    }
+
+    .team-member p {
+      color: #555;
+    }
+
+    .linkedin-link {
+      color: #3498db;
+      text-decoration: none;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .container {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .project-container {
+      display: none;
+      text-align: center;
+      margin: 20px;
+    }
+
+    .show-projects-btn,
+    .all-projects-btn,
+    .view-details-btn {
+      cursor: pointer;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      display: inline-block;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .more-info-container {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #ecf0f1;
+      border-radius: 5px;
+      text-align: left;
+    }
+
+    footer {
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .read-more-toggle {
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+  </style>
+  <title>
+    Flatbush Ratepayers & Residents Association Inc. (FBRRA)</title>
+</head>
+
+<body>
+
+  <header>
+    <img src="Logo.jpg" alt="Description of your image">
+    <h1>Flatbush Ratepayers & Residents Association Inc. (FBRRA)</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#portfolio">Our Projects</a>
+    <a href="#team">Team</a>
+    <a href="mailto:Flatbushrra@gmail.com">Email Us</a>
+    <a href="https://www.facebook.com/groups/653811665691048/">Our Facebook</a>
+  </nav>
+
+  <div id="home" class="hero-section">
+    <div class="hero-content">
+      <h2>Welcome to FBRRA Website</h2>
+      <p>FBRRA INC. IS A NON-POLITICAL AND NON-SECTARIAN ORGANIZATION THAT BUILDS COMMUNITIES AND RESOLVES LOCAL ISSUES.
+      </p>
+      <a href="#about" class="down-arrow-btn">&#8595; Learn More</a>
+    </div>
+  </div>
+
+  <div id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>The image below shows the area served by FBRRA </p>
+    <img src="flatbush.jpg" alt="Description of your image">
+    <p>
+      The Howick Local Board (HLB) comprises four subdivisions: Howick, Pakuranga, Botany, and Flat Bush, the
+      newest and still developing township. Flat Bush is anticipated to house around 45,000 residents upon
+      completion. Despite HLB's efforts in addressing local concerns, the Flat Bush community identified the
+      need for a dedicated association to enhance road safety, cleanliness, tree planting, and community
+      engagement.
+      <span class="read-more-toggle" onclick="toggleReadMore()"> Read More</span>
+    <div class="read-more-content">
+      <p> On February 12, 2022, residents gathered in Ormiston Town Centre, resolving
+        to establish "The Flat Bush Ratepayers and Residents Association." Officially incorporated on February
+        15,
+        2022, the non-political and non-sectarian association aims to address local issues and foster community
+        involvement without a profit motive. </p>
+    </div>
+    <br>
+    <p>The main purposes of the FBRRA are:
+      <br>
+      1) to represent and speak collectively or individually on behalf of all Ratepayers and Residents of the Flat
+      Bush Subdivision;
+      <br>
+      2) to provide a forum for Flat Bush Ratepayers and Residents to debate their proposals for Howick Local
+      Board, Council and the government of their community.
+      <br>
+      3) to present remits from such a forum to local and central governments;
+      <br>
+      4) to liaise with or affiliate with any other association having similar objectives;
+      <br>
+      <br>
+      You can read about some of the positive impact we have made in the community of flat bush in this article
+      <a href="https://www.times.co.nz/news/residents-stepping-up-to-shape-their-community/">here<i
+          class="bx bx-chevron-right"></i></a>
+    </p>
+    <a href="https://www.facebook.com/groups/653811665691048/" class="about-btn">Our Facebook<i
+        class="bx bx-chevron-right"></i></a>
+
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div id="team" class="team-section">
+    <h2>Our Team</h2>
+
+    <div class="team-member">
+      <img src="Lloyd.jpeg" alt="Team Member 1">
+      <h3>Lloyd Ratnaraja</h3>
+      <p>President</p>
+      <a href="https://www.linkedin.com/in/lloyd-ratnaraja-19252110/?originalSubdomain=nz" class="linkedin-link"
+        target="_blank">LinkedIn Profile</a>
+    </div>
+
+    <div class="team-member">
+      <img src="Yuva.jpg" alt="Team Member 2">
+      <h3>Yuva Adhikary</h3>
+      <p>Vice President</p>
+      <a href="https://www.linkedin.com/in/yuva-adhikary-5488aa44/?originalSubdomain=nz" class="linkedin-link"
+        target="_blank">LinkedIn Profile</a>
+    </div>
+
+    <div class="team-member">
+      <img src="Ruth.jpg" alt="Team Member 2">
+      <h3>Ruth Lemmer</h3>
+      <p>Treasurer</p>
+      <a href="https://www.linkedin.com/in/ruth-lemmer-6382751a/?originalSubdomain=nz" class="linkedin-link"
+        target="_blank">LinkedIn Profile</a>
+    </div>
+
+    <div class="team-member">
+      <img src="April.jpeg" alt="Team Member 2">
+      <h3>April Aryal</h3>
+      <p>Secretary</p>
+      <a href="https://www.linkedin.com/in/april-aryal-2a54029b/" class="linkedin-link" target="_blank">LinkedIn
+        Profile</a>
+    </div>
+
+    <div class="team-member">
+      <img src="Kamal.jpeg" alt="Team Member 2">
+      <h3>Kamal Lamgade</h3>
+      <p>Member</p>
+      <a href="https://www.linkedin.com/in/kamal-lamgade/" class="linkedin-link"
+        target="_blank">LinkedIn Profile</a>
+    </div>
+  </div>
+
+
+  <div id="portfolio" class="portfolio-section">
+    <h2>Our Projects</h2>
+    <div class="container">
+      <button class="all-projects-btn" onclick="showAllProjects()">All Projects</button>
+      <button class="show-projects-btn" onclick="showProjects('Current')">Completed Projects</button>
+      <button class="show-projects-btn" onclick="showProjects('Ongoing')">Ongoing and Future Projects</button>
+
+    </div>
+
+    <div id="Current" class="project-container">
+      <!-- Web Projects -->
+      <br>
+      <br>
+      <br>
+      <img src="Rubbish dump.jpg" alt="Description of your image">
+      <h2>Elimination of illegal rubbish dumping</h2>
+      <button class="view-details-btn" onclick="showMoreInfo('Current1')"><a href="Portfolio 1 .pdf" target="_blank">View Details</a></button>
+      <br>
+      <br>
+      <br>
+
+      <img src="Environment protection 2.jpg" alt="Description of your image">
+      <br>
+      <h2>Environmental protection</h2>
+      <button class="view-details-btn" onclick="showMoreInfo('Current2')"><a href="Portfolio 2.pdf" target="_blank">View Details</a></button>
+      <br>
+      <br>
+      <br>
+      <img src="Community patrol 1.jpg" alt="Description of your image">
+      <img src="Community patrol 2.jpg" alt="Description of your image">
+      <h2>Community Patrol</h2>
+      <button class="view-details-btn" onclick="showMoreInfo('Current3')"><a href="Portfolio 3 .pdf" target="_blank">View
+          Details</a></button>
+    </div>
+
+    <div id="Ongoing" class="project-container">
+      <!-- Mobile Projects -->
+      <img src="Ongoing projects.jpg" alt="Description of your image">
+      <h2>Ongoing Projects</h2>
+      <button class="view-details-btn" onclick="showMoreInfo('Ongoing1')"><a href="Ongoing projects.pdf"
+          target="_blank">View
+          Details</a></button>
+      <h2>Upcoming projects</h2>
+      <button class="view-details-btn" class="download-pdf-btn" onclick="showMoreInfo('Onging2')"> <a
+          href="Future Projects.pdf" target="_blank">View Details</a></button>
+
+    </div>
+
+    <div id="web1" class="more-info-container">More information about Web Project 1</div>
+    <div id="web2" class="more-info-container">More information about Web Project 2</div>
+    <div id="mobile1" class="more-info-container">More information about Mobile Project 1</div>
+    <div id="mobile2" class="more-info-container">More information about Mobile Project 2</div>
+  </div>
+
+
+  <footer>
+    &copy; 2024 FBRRa Website. All Rights Reserved.
+  </footer>
+
+  <script> // script for the read more button
+    function toggleReadMore() {
+      var content = document.querySelector('.read-more-content');
+      var toggleButton = document.querySelector('.read-more-toggle');
+
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        toggleButton.textContent = 'Read Less';
+      } else {
+        content.style.display = 'none';
+        toggleButton.textContent = 'Read More';
+      }
+    }
+  </script>
+
+  <script> //scripts for the portfolio page display buttons
+    function showProjects(category) {
+      // Hide all project containers
+      var projectContainers = document.querySelectorAll('.project-container');
+      projectContainers.forEach(function (container) {
+        container.style.display = 'none';
+      });
+
+      // Show the selected project container
+      var selectedContainer = document.getElementById(category);
+      if (selectedContainer) {
+        selectedContainer.style.display = 'block';
+      }
+    }
+
+    function showAllProjects() {
+      // Show all project containers
+      var projectContainers = document.querySelectorAll('.project-container');
+      projectContainers.forEach(function (container) {
+        container.style.display = 'block';
+      });
+    }
+
+    function showMoreInfo(infoId) {
+      // Show more information container
+      var moreInfoContainer = document.getElementById(infoId);
+      if (moreInfoContainer) {
+        moreInfoContainer.style.display = 'block';
+      }
+    }
+  </script>
+
+</body>
+
+</html>
